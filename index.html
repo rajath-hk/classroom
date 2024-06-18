@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
     <html>
       <head>
         <script src='https://8x8.vc/vpaas-magic-cookie-b81bc2015b114ecd80b309125cd606dc/external_api.js' async></script>
@@ -6,14 +7,15 @@
         <script type="text/javascript">
           window.onload = () => {
             const api = new JitsiMeetExternalAPI("8x8.vc", {
-              roomName: "PremiereprobyAYU",
+              roomName: "vpaas-magic-cookie-b81bc2015b114ecd80b309125cd606dc/SampleAppIllSpeculationsTerminateCommonly",
               parentNode: document.querySelector('#jaas-container'),
 							// Make sure to include a JWT if you intend to record,
 							// make outbound calls or use any other premium features!
-		    jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtYjgxYmMyMDE1YjExNGVjZDgwYjMwOTEyNWNkNjA2ZGMvMGQ4NDQwLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3MTg3MDIzOTcsImV4cCI6MTcxODcwOTU5NywibmJmIjoxNzE4NzAyMzkyLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtYjgxYmMyMDE1YjExNGVjZDgwYjMwOTEyNWNkNjA2ZGMiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOnRydWUsIm91dGJvdW5kLWNhbGwiOnRydWUsInNpcC1vdXRib3VuZC1jYWxsIjp0cnVlLCJ0cmFuc2NyaXB0aW9uIjp0cnVlLCJyZWNvcmRpbmciOnRydWV9LCJ1c2VyIjp7ImhpZGRlbi1mcm9tLXJlY29yZGVyIjpmYWxzZSwibW9kZXJhdG9yIjp0cnVlLCJuYW1lIjoibGlmZWZyZWUzMTciLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTEyMDI3OTcyMDY2NTM1MDYyNjkyIiwiYXZhdGFyIjoiIiwiZW1haWwiOiJsaWZlZnJlZTMxN0BnbWFpbC5jb20ifX0sInJvb20iOiIqIn0.GOHN95fB7g-JxgccPQO5Xi-v0ZMhNtUNUtsMMerTPPxz7SmGrB6pww5FphEFNLYT6krKWcRWV6kCvM7GeEiN1tap3ozkSoItEV-ceFG3HTW1DU0OdEIp3nwYue8LhKxflGv9patAdVItdx6ZnE14JZurRVd1b11YUtZ3YLD6PWRxcIhVem7xsl7oKqLVKFjXZ32-Q1H3WW_6OSVgERm81GTpS7ua2bfWPzME_tH6G6lgRlYOhwKSP24QqoviQ0Mrg-F86H8EHmr61noA9UryCMzg-c_Jbj7pnMArlK-tavvA0BJ-rAnRHEluhmYI7gBvFQnN5O5st7nMiQD4LvuPmg"
+							// jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtYjgxYmMyMDE1YjExNGVjZDgwYjMwOTEyNWNkNjA2ZGMvMGQ4NDQwLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3MTg3MDMxOTksImV4cCI6MTcxODcxMDM5OSwibmJmIjoxNzE4NzAzMTk0LCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtYjgxYmMyMDE1YjExNGVjZDgwYjMwOTEyNWNkNjA2ZGMiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTEyMDI3OTcyMDY2NTM1MDYyNjkyIiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.DeOvBzCqUQU2uWJ_Orv1fgSIRjEruRAhAA7Q-ZxbzRFzSiHt_1SIhEJxgrvv8Dd9YUl_Z5vObmH5ddM4lVGpheHipBobFnFmPY-asUUscmUom18uj0I1fPL5PExkwiEn1j8oQCoT9eAtVa0E2AJrC1b3wV1BlKknFvv172ERBZMSIJ_0ob-xp-zUjjq9H27Mncs-nAOR-dw-EuQjU0UjkkWffkKbjt0hInLo552FfraTp6APdQatSNtdkefwY_-3B2g6-LYo0YbY-UZ7VDHJiTNWrXQZkuXhqlL0B3TrPyt_WVVeL7wAIALIhTD6L76koft_NK8UTLokzmWgaVjkfg"
             });
           }
         </script>
       </head>
       <body><div id="jaas-container" /></body>
     </html>
+  
